@@ -257,7 +257,7 @@ if st.session_state["active_analysis"] is not None:
         st.stop()
 
 # Téléchargement du modèle MediaPipe si absent
-MODEL_PATH = "pose_landmarker_heavy.task"
+model_path = os.path.join(os.path.dirname(__file__), "pose_landmarker.task")
 if not os.path.exists(MODEL_PATH):
     with st.spinner("Téléchargement du modèle de pose MediaPipe..."):
         url = "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/1/pose_landmarker_heavy.task"
