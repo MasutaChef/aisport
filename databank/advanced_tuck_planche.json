@@ -1,0 +1,11 @@
+{
+    "angle_coude_min": 175.6,
+    "angle_coude_max": 175.6,
+    "lean_min": 144.6,
+    "lean_max": 144.6,
+    "ratio_moyen": 1.27,
+    "regle_biomecanique": "MOUVEMENT STATIQUE : Ne conseille JAMAIS de fl\u00e9chir les coudes.",
+    "sync_lean": 100,
+    "sync_prot": 85,
+    "sync_retro": 75
+}
