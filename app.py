@@ -8,9 +8,17 @@ import streamlit as st
 from groq import Groq
 import mediapipe as mp
 import datetime
-import re # <-- Nouvel import pour découper les commentaires de l'IA
+import re 
 
 st.set_page_config(page_title="Coach IA Sportif & Databank", layout="centered")
+
+# 🟢 C'EST ICI QU'IL FAUT METTRE L'INITIALISATION GROQ 🟢 👇
+# Récupération automatique de la clé depuis les secrets Streamlit
+groq_api_key = st.secrets.get("GROQ_API_KEY")
+
+# Initialisation du client Groq
+client = Groq(api_key=groq_api_key)
+# -------------------------------------------------------- 👆
 
 # --- GESTION DE LA VUE PERSISTANTE ---
 if "active_analysis" not in st.session_state:

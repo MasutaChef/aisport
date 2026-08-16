@@ -1,5 +1,5 @@
 streamlit
-opencv-python-headless
+groq
 mediapipe
+opencv-python-headless
 numpy
-pandas
